@@ -8,7 +8,6 @@ $txt_busqueda = filter_input(INPUT_POST,'txt_busqueda',FILTER_SANITIZE_STRING);
         <div class="col">
             <div class="form-group">
                 <input class="form-control" type="text" name="txt_busqueda" id="id_txt_busqueda" placeholder="digite aqui su busqueda" value="<?php echo $txt_busqueda; ?>"/>
-
             </div>
         </div>
         <div class="col">

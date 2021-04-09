@@ -10,7 +10,7 @@
 <body onload="abrirPagina('list/persona.php', 'contenido','')">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Ingreso Empleado</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,12 +46,7 @@
     </nav>
     <div class="container">
         <div class="card" >
-        <div class="card-head">
-        Listas
-        </div>
-        <div class="card-body" id="contenido">
-            <h5 class="card-title">Datos:</h5>
-            
+        <div class="card-body" id="contenido">         
         </div>
         </div>
     </div>

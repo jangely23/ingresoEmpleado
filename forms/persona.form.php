@@ -17,17 +17,17 @@ $personaDTO->cargarPorId($id_persona, $conexion);
         <form method="POST" action="process/persona.process.php" 
               onsubmit="return enviarFormulario(this,'',`abrirPagina('list/persona.php','contenido','&txt_busqueda='+$('#id_txt_nombre').val())`)">
             
-        <div class="form-group">
+        <div class="form-group mb-3">
             <label for="id_txt_nombre">Nombre</label>
             <input type="text" required="yes" name="nombre" class="form-control" id="id_txt_nombre" value="<?php echo $personaDTO->getNombre(); ?>" placeholder="nombre"/>
              
         </div>
-        <div class="form-group">
+        <div class="form-group mb-3">
             <label for="id_txt_email">Email</label>
             <input type="email" required="yes" name="email" class="form-control" id="id_txt_email" value="<?php echo $personaDTO->getEmail(); ?>" placeholder="Email"/>
              
         </div>
-        <div class="form-group">
+        <div class="form-group mb-3">
             <input type="hidden" name="id_persona" id="id_persona" value="<?php echo $personaDTO->getId_persona();?>"/>
             <input type="hidden" name="modo" id="modo" value="<?php echo $personaDTO->getId_persona()?"editar":"crear";?>"/> 
                 

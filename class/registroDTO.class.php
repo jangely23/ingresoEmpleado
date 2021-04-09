@@ -22,7 +22,7 @@ class registroDTO{
         return $this->id_persona;
     }
 
-    function getDatetime(): DateTime {
+    function getDatetime(): string {
         return $this->datetime;
     }
 
@@ -58,7 +58,6 @@ class registroDTO{
         $this->setId_persona($obj->id_persona);
         $this->setDatetime($obj->datetime);
         $this->setTipo_registro($obj->tipo_registro);
-        $this->setPersona($obj->persona);
     }
     
     function cargarPorId(int $id_registro, mysqli $conexion){

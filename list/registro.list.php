@@ -21,7 +21,7 @@ $txt_busqueda = filter_input(INPUT_POST,'txt_busqueda',FILTER_SANITIZE_STRING)??
 $registro = $registroDAO->getAll($txt_busqueda);
 ?>
 
-<button type="button" onclick="abrirPagina('forms/registro.form.php','contenido','')">+</button>
+<button type="button" class="btn-primary" onclick="abrirPagina('forms/registro.form.php','contenido','')">+</button>
 <table class="table table-responsive">
     <thead class="table-dark">
         <tr>

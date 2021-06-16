@@ -18,6 +18,9 @@ $personas = $personaDAO->getAll($txt_busqueda ='');
 ?>
 
 <div class="row">
+    <fieldset class="shadow-none p-2 mb-3 bg-light rounded">
+        <legend>Registros</legend>
+    </fieldset>
     <div class="col">
         <form method="POST" action="process/registro.process.php"
               onsubmit="return enviarFormulario($this,'',`abrirPagina('list/registro.php','contenido','&txt_busqueda='+$('#id_txt_persona').val())`);">

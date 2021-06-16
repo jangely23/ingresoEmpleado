@@ -13,6 +13,9 @@ $personaDTO->cargarPorId($id_persona, $conexion);
 ?>
 
 <div class="row">
+    <fieldset class="shadow-none p-2 mb-3 bg-light rounded">
+        <legend>Personas</legend>
+    </fieldset>
     <div class="col">
         <form method="POST" action="process/persona.process.php" 
               onsubmit="return enviarFormulario(this,'',`abrirPagina('list/persona.php','contenido','&txt_busqueda='+$('#id_txt_nombre').val())`)">
@@ -34,7 +37,6 @@ $personaDTO->cargarPorId($id_persona, $conexion);
             <button type="submit" nombre="enviar" class="btn btn-primary"> Guardar</button>
              
         </div>
->>>>>>> 7e0151cbde8915fd9953f9d73d80d0be43796d36
         </form>
     </div>
     
